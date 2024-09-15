@@ -1,0 +1,167 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+.navigation {
+    height: 60px;
+    background: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    width: 150px;
+    background-image: url(amazon3.png);
+    background-size: cover;
+}
+
+/* Address */
+.adress1 {
+    color: #cccc;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.adress2 {
+    color: white;
+    margin-left: 7px;
+}
+
+/* Navigation Icon */
+.icon {
+    color: white;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    background: red;
+    height: 35px;
+    width: 100%;
+    max-width: 620px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.nav-search input {
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.search-icon {
+    color: #0f1111;
+    width: 50px;
+    background: #febd68;
+    border-radius: 0 4px 4px 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgb(250, 229, 229);
+    padding: 20px 0 15px;
+}
+
+.box {
+    height: 400px;
+    width: 23%;
+    background: white;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
+
+/* Image Classes */
+.imgf, .imgs, .imgt, .imgo {
+    height: 256px;
+    width: 100%;
+    background-size: cover;
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    height: 35px;
+    width: 100%;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional Styles */
+#body {
+    height: 30px;
+    width: 90%;
+    color: black;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.98rem;
+}
+
+#pad {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .logo {
+        margin: 10px 0;
+    }
+    
+    .nav-search {
+        width: 90%;
+    }
+
+    #pannal {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px 0;
+    }
+}
